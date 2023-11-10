@@ -76,3 +76,5 @@ vim config
 git config --global user.name "BessieChen"
 #1699606198
 git config --global user.email bc2535@nyu.edu
+#1699606425
+pwd

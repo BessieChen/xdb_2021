@@ -103,3 +103,5 @@
 2023-11-10 16:50:12.974 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1418
 2023-11-10 16:50:14.820 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1419
 2023-11-10 16:50:14.911 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1420
+2023-11-10 16:52:44.747 [error] Error: connect ETIMEDOUT 52.182.143.210:443
+	at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
