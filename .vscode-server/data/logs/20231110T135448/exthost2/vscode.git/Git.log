@@ -1,0 +1,96 @@
+2023-11-10 13:54:57.748 [info] Log level: Info
+2023-11-10 13:54:57.748 [info] Validating found git in: "git"
+2023-11-10 13:54:57.748 [info] Using git "1.8.3.1" from "git"
+2023-11-10 13:54:57.748 [info] > git rev-parse --show-toplevel [2ms]
+2023-11-10 13:54:57.748 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:54:57.748 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:54:57.748 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:54:57.748 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:54:57.748 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:54:57.753 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:54:57.753 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:54:57.758 [info] > git rev-parse --show-toplevel [0ms]
+2023-11-10 13:54:57.758 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:54:57.765 [info] > git rev-parse --show-toplevel [3ms]
+2023-11-10 13:54:57.765 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:55:27.741 [info] > git rev-parse --show-toplevel [2ms]
+2023-11-10 13:55:27.741 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:56:07.429 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:56:07.429 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:57:45.975 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:57:45.975 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:57:50.868 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:57:50.868 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:57:52.005 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:57:52.006 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:58:58.663 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:58:58.663 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 13:59:09.976 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 13:59:09.976 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:02:43.577 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:02:43.577 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:02:48.481 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:02:48.481 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:03:31.022 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:03:31.023 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:08:00.929 [info] > git rev-parse --show-toplevel [2ms]
+2023-11-10 15:08:00.929 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:09:58.884 [info] > git rev-parse --show-toplevel [3ms]
+2023-11-10 15:09:58.884 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:09:58.901 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:09:58.901 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:09:58.916 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:09:58.916 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.346 [info] Log level: Info
+2023-11-10 15:29:45.346 [info] Validating found git in: "git"
+2023-11-10 15:29:45.346 [info] Using git "1.8.3.1" from "git"
+2023-11-10 15:29:45.346 [info] > git rev-parse --show-toplevel [2ms]
+2023-11-10 15:29:45.346 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.347 [info] > git rev-parse --show-toplevel [9ms]
+2023-11-10 15:29:45.347 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.347 [info] > git rev-parse --show-toplevel [5ms]
+2023-11-10 15:29:45.347 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.348 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:29:45.348 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.353 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:29:45.353 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.360 [info] > git rev-parse --show-toplevel [3ms]
+2023-11-10 15:29:45.360 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.368 [info] > git rev-parse --show-toplevel [3ms]
+2023-11-10 15:29:45.368 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 15:29:45.373 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 15:29:45.373 [info] fatal: Not a git repository (or any of the parent directories): .git
+2023-11-10 16:20:24.132 [info] > git init [2ms]
+2023-11-10 16:20:24.139 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-10 16:20:24.147 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2023-11-10 16:20:24.166 [info] Open repository: /home/xdb
+2023-11-10 16:20:24.180 [warning] getRemotes() - ENOENT: no such file or directory, open '/home/xdb/--git-common-dir/config'
+2023-11-10 16:20:24.187 [info] > git fetch [23ms]
+2023-11-10 16:20:24.187 [info] fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+2023-11-10 16:20:24.192 [warning] getRemotes() - ENOENT: no such file or directory, open '/home/xdb/--git-common-dir/config'
+2023-11-10 16:20:24.199 [info] > git config --get commit.template [13ms]
+2023-11-10 16:20:24.199 [info] > git remote --verbose [19ms]
+2023-11-10 16:20:24.200 [info] > git config --get commit.template [2ms]
+2023-11-10 16:20:24.200 [info] > git remote --verbose [8ms]
+2023-11-10 16:20:24.212 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [6ms]
+2023-11-10 16:20:24.221 [warning] getRemotes() - ENOENT: no such file or directory, open '/home/xdb/--git-common-dir/config'
+2023-11-10 16:20:24.229 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [18ms]
+2023-11-10 16:20:24.231 [info] > git config --get commit.template [2ms]
+2023-11-10 16:20:24.231 [info] > git remote --verbose [11ms]
+2023-11-10 16:20:24.241 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2023-11-10 16:20:24.266 [info] > git status -z -uall [20ms]
+2023-11-10 16:20:24.924 [info] > git check-ignore -v -z --stdin [2ms]
+2023-11-10 16:20:25.044 [info] > git show --textconv :test202311/tools/public.cpp [31ms]
+2023-11-10 16:20:25.044 [info] > git show --textconv :test202311/app/demo01.cpp [25ms]
+2023-11-10 16:20:25.044 [info] > git show --textconv :test202311/tools/public.h [20ms]
+2023-11-10 16:20:25.044 [info] > git ls-files --stage -- /home/xdb/test202311/app/demo01.cpp [8ms]
+2023-11-10 16:20:25.045 [info] > git ls-files --stage -- /home/xdb/test202311/tools/public.cpp [14ms]
+2023-11-10 16:20:25.047 [info] > git ls-files --stage -- /home/xdb/test202311/tools/public.h [4ms]
+2023-11-10 16:20:25.446 [info] > git check-ignore -v -z --stdin [2ms]
+2023-11-10 16:20:25.861 [info] > git ls-files --stage -- /home/xdb/test202311/tools/public.h [1ms]
+2023-11-10 16:20:25.862 [info] > git ls-files --stage -- /home/xdb/test202311/app/demo01.cpp [8ms]
+2023-11-10 16:20:25.862 [info] > git ls-files --stage -- /home/xdb/test202311/tools/public.cpp [15ms]
+2023-11-10 16:20:25.899 [info] > git show --textconv :test202311/tools/public.h [14ms]
+2023-11-10 16:20:25.899 [info] > git show --textconv :test202311/app/demo01.cpp [6ms]
+2023-11-10 16:20:25.899 [info] > git show --textconv :test202311/tools/public.cpp [1ms]

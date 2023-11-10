@@ -1,0 +1,20 @@
+2023-11-10 13:02:16.323 [info] 
+
+
+
+
+2023-11-10 13:02:16.323 [info] Extension host agent started.
+2023-11-10 13:02:16.339 [info] Started initializing default profile extensions in extensions installation folder. file:///home/xdb/.vscode-server/extensions
+2023-11-10 13:02:16.352 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/xdb/.vscode-server/extensions
+2023-11-10 13:02:16.359 [info] [127.0.0.1][4596705a][ManagementConnection] New connection established.
+2023-11-10 13:02:16.375 [info] [127.0.0.1][89817380][ExtensionHostConnection] New connection established.
+2023-11-10 13:02:16.591 [info] [127.0.0.1][89817380][ExtensionHostConnection] <786> Launched Extension Host Process.
+2023-11-10 13:02:22.250 [info] [127.0.0.1][4596705a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-11-10 13:02:22.251 [error] Error: Throttler is disposed
+    at c.queue (/home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+2023-11-10 13:02:27.265 [info] [127.0.0.1][89817380][ExtensionHostConnection] <786> Extension Host Process exited with code: 0, signal: null.
+2023-11-10 13:02:27.265 [info] Cancelling previous shutdown timeout
+2023-11-10 13:02:27.265 [info] Last EH closed, waiting before shutting down
+2023-11-10 13:07:27.266 [info] Last EH closed, shutting down

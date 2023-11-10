@@ -1,0 +1,140 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to 127.0.0.1:46776 (IPv4)
+Extension host agent listening on 46776
+
+[13:54:48] 
+
+
+
+
+[13:54:48] Extension host agent started.
+[13:54:48] [127.0.0.1][6064892a][ManagementConnection] New connection established.
+[13:54:48] [127.0.0.1][0d01e595][ExtensionHostConnection] New connection established.
+[13:54:49] [127.0.0.1][0d01e595][ExtensionHostConnection] <15211> Launched Extension Host Process.
+[13:54:53] [127.0.0.1][6064892a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:54:53] Error: Throttler is disposed
+    at c.queue (/home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+Got delay-shutdown request while in shutdown timeout, delaying
+[13:54:55] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[13:54:55] Cancelling previous shutdown timeout
+[13:54:55] [127.0.0.1][ab554077][ManagementConnection] New connection established.
+[13:54:55] [127.0.0.1][d7f2d22d][ExtensionHostConnection] New connection established.
+[13:54:55] [127.0.0.1][d7f2d22d][ExtensionHostConnection] <15360> Launched Extension Host Process.
+[13:54:58] [127.0.0.1][0d01e595][ExtensionHostConnection] <15211> Extension Host Process exited with code: 0, signal: null.
+Cancelling previous shutdown timeout
+[13:54:58] Cancelling previous shutdown timeout
+[15:02:43] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:02:43] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+[15:02:48] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:02:48] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+[15:03:28] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:03:30] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+[15:08:00] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+[15:08:00] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:08:04] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:08:58] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:09:53] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:09:58] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+[15:10:48] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:11:43] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:12:38] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:13:33] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:14:28] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:15:24] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:15:54] [127.0.0.1][d7f2d22d][ExtensionHostConnection] <15360> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[15:15:54] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:16:19] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:16:19] Cancelling previous shutdown timeout
+[15:16:19] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:17:14] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:17:14] Cancelling previous shutdown timeout
+[15:17:14] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:18:09] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:18:09] Cancelling previous shutdown timeout
+[15:18:09] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:19:04] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:19:04] Cancelling previous shutdown timeout
+[15:19:04] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:19:59] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:19:59] Cancelling previous shutdown timeout
+[15:19:59] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:20:54] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:20:54] Cancelling previous shutdown timeout
+[15:20:54] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:21:49] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:21:49] Cancelling previous shutdown timeout
+[15:21:49] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:22:44] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:22:44] Cancelling previous shutdown timeout
+[15:22:44] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:23:39] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:23:39] Cancelling previous shutdown timeout
+[15:23:39] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:24:34] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:24:34] Cancelling previous shutdown timeout
+[15:24:34] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:25:31] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:25:31] Cancelling previous shutdown timeout
+[15:25:31] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:26:24] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:26:24] Cancelling previous shutdown timeout
+[15:26:24] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:27:19] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:27:19] Cancelling previous shutdown timeout
+[15:27:19] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:28:14] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:28:14] Cancelling previous shutdown timeout
+[15:28:14] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:29:09] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:29:09] Cancelling previous shutdown timeout
+[15:29:09] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+Got delay-shutdown request while in shutdown timeout, delaying
+[15:29:39] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[15:29:39] Cancelling previous shutdown timeout
+[15:29:39] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+[15:29:44] [127.0.0.1][d7f2d22d][ExtensionHostConnection] Unknown reconnection token (seen before).
+[15:29:44] [127.0.0.1][d94af471][ExtensionHostConnection] New connection established.
+[15:29:44] [127.0.0.1][d94af471][ExtensionHostConnection] <8917> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[15:34:39] New EH opened, aborting shutdown

@@ -1,0 +1,93 @@
+2023-11-10 13:54:48.691 [info] 
+
+
+
+
+2023-11-10 13:54:48.705 [info] Extension host agent started.
+2023-11-10 13:54:48.765 [info] [127.0.0.1][6064892a][ManagementConnection] New connection established.
+2023-11-10 13:54:48.809 [info] [127.0.0.1][0d01e595][ExtensionHostConnection] New connection established.
+2023-11-10 13:54:49.013 [info] [127.0.0.1][0d01e595][ExtensionHostConnection] <15211> Launched Extension Host Process.
+2023-11-10 13:54:53.422 [info] [127.0.0.1][6064892a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-11-10 13:54:53.423 [error] Error: Throttler is disposed
+    at c.queue (/home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/xdb/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+2023-11-10 13:54:55.160 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 13:54:55.160 [info] Cancelling previous shutdown timeout
+2023-11-10 13:54:55.244 [info] [127.0.0.1][ab554077][ManagementConnection] New connection established.
+2023-11-10 13:54:55.308 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] New connection established.
+2023-11-10 13:54:55.315 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] <15360> Launched Extension Host Process.
+2023-11-10 13:54:58.444 [info] [127.0.0.1][0d01e595][ExtensionHostConnection] <15211> Extension Host Process exited with code: 0, signal: null.
+2023-11-10 13:54:58.445 [info] Cancelling previous shutdown timeout
+2023-11-10 15:02:43.493 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:02:43.538 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+2023-11-10 15:02:48.409 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:02:48.448 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+2023-11-10 15:03:28.900 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:03:30.968 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+2023-11-10 15:08:00.195 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+2023-11-10 15:08:00.964 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:08:04.633 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:08:58.785 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:09:53.808 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:09:58.844 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] The client has reconnected.
+2023-11-10 15:10:48.921 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:11:43.853 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:12:38.921 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:13:33.862 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:14:28.936 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:15:24.375 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:15:54.267 [info] [127.0.0.1][d7f2d22d][ExtensionHostConnection] <15360> Extension Host Process exited with code: 0, signal: null.
+2023-11-10 15:15:54.268 [info] Last EH closed, waiting before shutting down
+2023-11-10 15:16:19.316 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:16:19.316 [info] Cancelling previous shutdown timeout
+2023-11-10 15:16:19.421 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:17:14.345 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:17:14.346 [info] Cancelling previous shutdown timeout
+2023-11-10 15:17:14.423 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:18:09.831 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:18:09.831 [info] Cancelling previous shutdown timeout
+2023-11-10 15:18:09.902 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:19:04.303 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:19:04.303 [info] Cancelling previous shutdown timeout
+2023-11-10 15:19:04.406 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:19:59.274 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:19:59.274 [info] Cancelling previous shutdown timeout
+2023-11-10 15:19:59.383 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:20:54.739 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:20:54.739 [info] Cancelling previous shutdown timeout
+2023-11-10 15:20:54.916 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:21:49.293 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:21:49.293 [info] Cancelling previous shutdown timeout
+2023-11-10 15:21:49.426 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:22:44.775 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:22:44.775 [info] Cancelling previous shutdown timeout
+2023-11-10 15:22:44.892 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:23:39.252 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:23:39.252 [info] Cancelling previous shutdown timeout
+2023-11-10 15:23:39.360 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:24:34.355 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:24:34.355 [info] Cancelling previous shutdown timeout
+2023-11-10 15:24:34.434 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:25:31.011 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:25:31.011 [info] Cancelling previous shutdown timeout
+2023-11-10 15:25:31.085 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:26:24.296 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:26:24.296 [info] Cancelling previous shutdown timeout
+2023-11-10 15:26:24.415 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:27:19.285 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:27:19.285 [info] Cancelling previous shutdown timeout
+2023-11-10 15:27:19.503 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:28:14.278 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:28:14.278 [info] Cancelling previous shutdown timeout
+2023-11-10 15:28:14.349 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:29:09.802 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:29:09.802 [info] Cancelling previous shutdown timeout
+2023-11-10 15:29:09.874 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:29:39.006 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-11-10 15:29:39.006 [info] Cancelling previous shutdown timeout
+2023-11-10 15:29:39.526 [info] [127.0.0.1][ab554077][ManagementConnection] The client has reconnected.
+2023-11-10 15:29:44.502 [error] [127.0.0.1][d7f2d22d][ExtensionHostConnection] Unknown reconnection token (seen before).
+2023-11-10 15:29:44.585 [info] [127.0.0.1][d94af471][ExtensionHostConnection] New connection established.
+2023-11-10 15:29:44.592 [info] [127.0.0.1][d94af471][ExtensionHostConnection] <8917> Launched Extension Host Process.
+2023-11-10 15:34:39.007 [info] New EH opened, aborting shutdown
