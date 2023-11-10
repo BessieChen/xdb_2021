@@ -54,3 +54,25 @@ echo $LD_LIBRARY_PATH
 g++ -fPIC -shared -o libpublic.so public.cpp
 #1699597969
 ./demo01
+#1699605767
+git config -l --show-origin
+#1699605780
+git
+#1699605784
+git -v
+#1699606137
+ll
+#1699606141
+ll -a
+#1699606154
+cd .git
+#1699606156
+ll -a
+#1699606163
+cd config
+#1699606174
+vim config
+#1699606193
+git config --global user.name "BessieChen"
+#1699606198
+git config --global user.email bc2535@nyu.edu

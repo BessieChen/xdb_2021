@@ -1,0 +1,19 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.autoGuessEncoding": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": 1,
+    "cmake.configureOnOpen": true,
+    "lsby_gitee_vscode_plugin.personal_access_tokens": "63605abdbfe6167b2b053ebdb1bfa7ed",
+    "git.autofetch": true,
+    "redhat.telemetry.enabled": true,
+    "git.openRepositoryInParentFolders": "always",
+    "diffEditor.hideUnchangedRegions.enabled": true
+}
