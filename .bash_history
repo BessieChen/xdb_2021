@@ -78,3 +78,5 @@ git config --global user.name "BessieChen"
 git config --global user.email bc2535@nyu.edu
 #1699606425
 pwd
+#1699830681
+gdb -v
