@@ -586,3 +586,43 @@ wc /home/xdb/project/idc/log/idc/crtsurfdata.log
 make
 #1700192499
 ./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700206398
+make
+#1700206413
+rm *
+#1700206416
+ll
+#1700206430
+cd /home/xdb/project/idc/log/idc
+#1700206431
+ll
+#1700206433
+rm *
+#1700206436
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700206451
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700206529
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata2.log json
+#1700206823
+pwd
+#1700206824
+make
+#1700206840
+cd /tmp/idc/surfdata
+#1700206840
+ll
+#1700206844
+rm *
+#1700206845
+pwd
+#1700206871
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700206902
+ll
+#1700206924
+head *.csv
+#1700206941
+head *.json
+#1700206963
+head *.xml
