@@ -8,7 +8,10 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:q
 :q!
+:1
+:wq!
 
 # Search String History (newest to oldest):
 
@@ -21,13 +24,47 @@
 # Registers:
 
 # File marks:
-'0  5  0  ~/.git/config
+'0  733  0  /tmp/log/demo42.log
+'1  1509  0  /tmp/log/demo42.log
+'2  1  0  ~/project_final/public/demo/demo30.cpp
+'3  5  0  ~/.git/config
 
 # Jumplist (newest first):
+-'  733  0  /tmp/log/demo42.log
+-'  1509  0  /tmp/log/demo42.log
+-'  1  0  /tmp/log/demo42.log
+-'  1  0  ~/project_final/public/demo/demo30.cpp
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  1  0  ~/project_final/public/demo/demo30.cpp
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  1  0  ~/project_final/public/demo/demo30.cpp
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  1  0  ~/project_final/public/demo/demo30.cpp
+-'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
 -'  5  0  ~/.git/config
 -'  1  0  ~/.git/config
 
 # History of marks within files (newest to oldest):
+
+> /tmp/log/demo42.log
+	"	733	0
+
+> ~/project_final/public/demo/demo30.cpp
+	"	1	0
+	^	14	47
+	.	14	12
+	+	12	12
+	+	14	12
 
 > ~/.git/config
 	"	5	0

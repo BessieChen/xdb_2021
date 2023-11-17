@@ -80,3 +80,471 @@ git config --global user.email bc2535@nyu.edu
 pwd
 #1699830681
 gdb -v
+#1699830880
+cd /home/xdb/test202311/app
+#1699830882
+ll
+#1699830915
+g++ -o demo02 demo02.cpp
+#1699830923
+./demo2 a b c
+#1699830931
+./demo02 a b c
+#1699830949
+./demo02 a b 2
+#1699830963
+g++ -o demo02 demo02.cpp
+#1699831016
+gdb demo02
+#1699831047
+g++ -o demo02 demo02.cpp -g
+#1699831053
+gdb demo02
+#1699834002
+g++ -o demo02 demo02.cpp -g
+#1699834008
+cd /home/xdb/test202311/app
+#1699834009
+g++ -o demo02 demo02.cpp -g
+#1699834018
+gdb demo2
+#1699834160
+pwd
+#1699834164
+g++ -o demo02 demo02.cpp -g
+#1699834169
+gdb demo02
+#1699851282
+g++ -o d3 d3.cpp -g
+#1699851287
+cd /home/xdb/test202311/app
+#1699851288
+g++ -o d3 d3.cpp -g
+#1699851298
+cd /home/xdb/test202311/app
+#1699851299
+g++ -o d3 d3.cpp -g
+#1699851309
+./d3
+#1699851315
+ulimit -a
+#1699851537
+ulimit -c unlimited 
+#1699851539
+ulimit -a
+#1699851543
+./d3
+#1699851546
+ll
+#1699851566
+gdb d3 core.29128
+#1699851873
+g++ -o d3 d3.cpp -g
+#1699851877
+./d3
+#1699851879
+ll
+#1699851889
+gdb d3 core.
+#1699851907
+gdb d3 core.31636 
+#1699852356
+clear
+#1699852364
+g++ -o d4 d4.cpp -g
+#1699852387
+grep ps | -ef d4
+#1699852435
+ps -ef | grep d4
+#1699852447
+gdb d4 2891
+#1699852469
+gdb d4 -p 2891
+#1699852369
+./d4
+#1699920280
+cd /tmp
+#1699920287
+ll
+#1699920298
+sudo tar zxvf project_20230727.tgz
+#1699920309
+sudo tar zxvf project_20230727.tgz
+#1699920962
+cd /home/xdb/project_final
+#1699920994
+cd /home/xdb/project_final/public/demo
+#1699920998
+./demo10
+#1699922757
+./d
+#1699922760
+./demo20
+#1699930231
+./demo22
+#1699930383
+./demo23
+#1699920213
+su
+#1699920348
+su
+#1700093681
+cd /home/xdb/project_final/public/demo/demo24.cpp
+#1700093687
+cd /home/xdb/project_final/public/demo
+#1700093690
+./demo24
+#1700093960
+./demo26
+#1700094865
+./demo28
+#1700094899
+./demo29
+#1700096945
+cd /home/xdb/project_final/public/demo
+#1700096945
+ll
+#1700096996
+cd /home/xdb/project_final/public/demo
+#1700096998
+ll
+#1700097038
+chmod 757 demo31
+#1700097047
+chmod 757 demo30.cpp
+#1700097087
+su vim demo30.cpp
+#1700096957
+su
+#1700097096
+vim demo30.cpp
+#1700097190
+cd /home/xdb/project_final/public/demo
+#1700097199
+./demo30
+#1700097203
+cd /tmp
+#1700097206
+ll
+#1700100998
+rm aaa
+#1700101002
+rm -f aaa
+#1700101018
+rm -rf aaa
+#1700101020
+rm -rf 111
+#1700101029
+cd /home/xdb/project_final/public/demo
+#1700101046
+./demo34 /home/xdb/project_final/public "*.h"
+#1700101522
+cd /home/xdb/test202311/app
+#1700101546
+g++ -o demo36 demo36.cpp 
+#1700101581
+g++ -o demo36 demo36.cpp 
+#1700101650
+g++ -o demo36 demo36.cpp /home/xdb/project_final/public/_public.cpp
+#1700101675
+cd /tmp/data
+#1700101676
+ll
+#1700101680
+ll
+#1700101671
+./demo36
+#1700101730
+ll
+#1700102497
+cat girl.xml
+#1700102734
+cd /home/xdb/project_final/public/demo
+#1700102737
+./demo37
+#1700103893
+./demo38
+#1700103905
+ll
+#1700103908
+cat /tmp/data/girl.dat
+#1700104057
+./demo39
+#1700104321
+cd /tmp/log
+#1700104284
+./demo42
+#1700104322
+ll
+#1700104325
+ll
+#1700104339
+head demo42.log 
+#1700104366
+cd ..
+#1700104367
+ll
+#1700104374
+rm -rf data log
+#1700104375
+ll
+#1700107745
+g++ -g -o demo42 demo42. cpp ../_public.cpp -lpthread
+#1700107753
+g++ -g -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700107809
+cd /home/xdb/test202311/app
+#1700107810
+g++ -g -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700107823
+g++ -g -o demo42 demo42.cpp /home/xdb/project_final/public/_public.cpp -lpthread
+#1700107853
+g++ -g -o demo42 demo42.cpp /home/xdb/project_final/public/_public.cpp -lpthread
+#1700116093
+ll
+#1700116105
+g++ -g -o demo42 demo42.cpp /home/xdb/project_final/public/_public.cpp -lpthread
+#1700116215
+cd /home/xdb/project_final/public/demo
+#1700116223
+ll *42.cpp
+#1700116434
+chmod 766 demo42.cpp
+#1700116438
+sudo chmod 766 demo42.cpp
+#1700116449
+su chmod 766 demo42.cpp
+#1700116819
+cd /home/xdb/project_final/public/demo/demo42.cpp
+#1700116827
+cd /home/xdb/project_final/public/demo
+#1700116850
+g++ -g -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700116964
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700116994
+g++ -o demo422 demo42.cpp ../_public.cpp -lpthread
+#1700117048
+ls
+#1700117083
+g++ demo42.cpp ../_public.cpp -o demo422 -lpthread
+#1700117104
+g++ demo42.cpp ../_public.cpp -o demo422
+#1700117440
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700117444
+cd /home/xdb/project_final/public/demo
+#1700117447
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700117520
+ll
+#1700117522
+cd log
+#1700117523
+ll
+#1700117539
+ll
+#1700117543
+ll
+#1700117545
+ll
+#1700117546
+ll
+#1700117504
+./demo42
+#1700117579
+ll
+#1700117581
+ll
+#1700117656
+ll
+#1700117689
+rm demo42.log 
+#1700117692
+ll
+#1700117707
+g++ -g -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700117830
+gdb ./demo42
+#1700118028
+g++ -g -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700118041
+pwd
+#1700118042
+ll
+#1700118048
+ll
+#1700118054
+ll
+#1700118035
+./demo42
+#1700122856
+ll
+#1700128071
+rm *
+#1700128076
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700128080
+./demo42
+#1700128098
+rm *
+#1700128110
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700128151
+ll
+#1700128114
+./demo42
+#1700128220
+ll
+#1700128227
+wc *
+#1700128304
+pwd
+#1700128307
+rm *
+#1700128354
+pwd
+#1700128402
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700128410
+./demo42
+#1700128491
+ll
+#1700128497
+wc *
+#1700130420
+cat demo42.log 
+#1700130535
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700130574
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700130586
+rm *
+#1700130604
+ll
+#1700130437
+vim demo42.log 
+#1700130623
+ll
+#1700130624
+rm (
+#1700130627
+rm *
+#1700130635
+./demo42
+#1700130878
+ll
+#1700130892
+head demo42.log.20231116183111
+#1700131425
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700131431
+ll
+#1700131458
+rm *
+#1700131492
+ll
+#1700131560
+ll
+#1700131470
+./demo42
+#1700131569
+wc *
+#1700131575
+wc *
+#1700131751
+rm *
+#1700131766
+g++ -o demo42 demo42.cpp ../_public.cpp -lpthread
+#1700131769
+./demo42
+#1700131888
+ll
+#1700131891
+wc *
+#1700131927
+vi demo42.log 
+#1700131980
+rm *
+#1700179004
+clear
+#1700179016
+./demo44
+#1700179037
+./demo45
+#1700179042
+clear
+#1700179052
+cd /home/xdb/project_final/public/demo
+#1700179056
+./demo45
+#1700179024
+./demo44 192.168.150.128 5005
+#1700179081
+./demo44 192.168.150.128 5005
+#1700179060
+./demo45 5005
+#1700179138
+ps -ef | grep
+#1700179140
+ps -ef
+#1700179163
+clear
+#1700179167
+ipconfig
+#1700179169
+ip
+#1700179207
+clear
+#1700179228
+./demo44 127.0.0.1 5005
+#1700179217
+./demo45 5005
+#1700182386
+clear
+#1700182400
+./demo46 127.0.0.1 5005
+#1700182381
+./demo47 5005
+#1700186862
+cd /home/xdb/test202311/idc/cpp
+#1700186866
+make
+#1700186893
+clear
+#1700186894
+make
+#1700186922
+make
+#1700186943
+clear
+#1700186945
+make
+#1700186959
+make
+#1700186997
+./crtsurfdata 
+#1700187267
+cd /home/xdb/project
+#1700187502
+cd /home/xdb/project/idc/cpp
+#1700187504
+make
+#1700187554
+cd ../bin
+#1700187559
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /log/idc/crtsurfdata.log
+#1700187574
+./crtsurfdata 
+#1700187628
+cd /tmp/idc
+#1700187634
+cd /log
+#1700187681
+killall crtsurfdata
+#1700187658
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700187750
+cd /home/xdb/project/idc/cpp
+#1700187757
+make clean
