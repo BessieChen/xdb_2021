@@ -582,3 +582,7 @@ make
 ./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
 #1700191632
 wc /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700192495
+make
+#1700192499
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
