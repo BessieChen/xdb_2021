@@ -548,3 +548,37 @@ killall crtsurfdata
 cd /home/xdb/project/idc/cpp
 #1700187757
 make clean
+#1700189393
+make
+#1700189423
+cd /home/xdb/project/idc/log
+#1700189425
+rm *
+#1700189433
+ll
+#1700189443
+cd idc
+#1700189446
+pwd
+#1700189451
+ll
+#1700189453
+rm *
+#1700189462
+cd cd /home/xdb/project/idc/cpp
+#1700189467
+cd /home/xdb/project/idc/cpp
+#1700189469
+make
+#1700189492
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700190086
+make
+#1700190092
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700190178
+make
+#1700190181
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log
+#1700191632
+wc /home/xdb/project/idc/log/idc/crtsurfdata.log
