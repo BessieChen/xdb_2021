@@ -626,3 +626,139 @@ head *.csv
 head *.json
 #1700206963
 head *.xml
+#1700209718
+clear
+#1700209721
+cd /home/xdb/project
+#1700209726
+mkdir tools
+#1700209729
+cd tools
+#1700209735
+mkdir cpp bin log
+#1700209942
+cd ../cpp
+#1700209946
+cd ..
+#1700209955
+cd tools/cpp
+#1700209958
+make
+#1700210001
+./procctl 
+#1700210081
+make
+#1700210087
+./procctl 
+#1700210093
+/home/xdb/project/tools/bin/procctl 10 /usr/bin/tar zcvf /tmp/tmp.tgz /usr/include
+#1700210097
+cd /tmp
+#1700210098
+ll
+#1700210168
+ll tmp.tgz
+#1700210179
+rm tmp.tgz ; ll tmp.tgz 
+#1700210182
+rm tmp.tgz ; ll tmp.tgz 
+#1700210196
+ll tmp.tgz 
+#1700210316
+rm tmp.tgz 
+#1700210326
+rm -rf idc log
+#1700210327
+ll
+#1700210340
+cd /home/xdb/project/tools/cpp
+#1700210353
+./procctl 60 /home/xdb/project/idc/bin/crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/tools/log/idc/crtsurfdata.log csv,xml,json
+#1700210454
+ps -ef | grep procctl
+#1700210466
+kill -9 6143
+#1700210471
+kill -9 8151
+#1700210473
+ps -ef | grep procctl
+#1700210558
+cd /tmp/idc/surfdata
+#1700210559
+ll
+#1700210829
+cd /tmp
+#1700210830
+ll
+#1700210839
+rm -rf idc
+#1700210841
+ll
+#1700116452
+su
+#1700117412
+su
+#1700270820
+ps -ef | grep xdb
+#1700270853
+ps -ef | grep crtsurfdata
+#1700270869
+killall crtsurfdata
+#1700270884
+kill -9 31067
+#1700270911
+ps -ef | grep tar
+#1700270940
+ps -ef | grep tar
+#1700270956
+ps -ef | grep crtsurfdata
+#1700270972
+kill -9 crtsurfdata
+#1700270978
+killall crtsurfdata
+#1700271003
+kill -9 32106
+#1700271554
+cd /home/xdb/project/tools/cpp
+#1700271557
+./procctl 
+#1700271618
+g++ -o server server1.cpp
+#1700271633
+./procctl 10 ./server
+#1700271652
+ps -ef | grep server
+#1700271665
+ps -ef | grep server
+#1700271696
+ps -ef | grep server
+#1700271714
+ps -ef | grep server | grep xdb
+#1700271735
+kill -9 5016
+#1700271737
+kill -9 5020
+#1700271742
+ps -ef | grep server
+#1700271753
+rm server
+#1700271775
+g++ -g jialiping server1.cpp
+#1700271785
+g++ -o jialiping server1.cpp
+#1700271797
+./procctl 5 ./jialiping 
+#1700271802
+ps -ef | grep jialiping 
+#1700271818
+ps -ef | grep jialiping 
+#1700271845
+ps -ef | grep jialiping 
+#1700271855
+kill -9 6639
+#1700271857
+kill -9 6640
+#1700271859
+ps -ef | grep jialiping 
+#1700271867
+rm jialiping 
