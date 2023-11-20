@@ -762,3 +762,21 @@ kill -9 6640
 ps -ef | grep jialiping 
 #1700271867
 rm jialiping 
+#1700364663
+su -
+#1700443412
+cd /home/bftp
+#1700445808
+cd /tmp/list
+#1700445810
+ll
+#1700445814
+cat tmp.list
+#1700445836
+ftp 139.159.187.232
+#1700445990
+ftp 139.159.187.232
+#1700466123
+cd /home/xdb/project/public/demo
+#1700466124
+ll

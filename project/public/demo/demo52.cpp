@@ -1,7 +1,7 @@
 /*
- *  程序名：demo52.cpp，此程序演示采用开发框架的cftpclient类下载文件。
- *  作者：吴从周
-*/
+ * Program name: demo52.cpp, this program demonstrates using the development framework's cftpclient class to download files.
+ * Author: Wu Congzhou
+ */
 #include "../_ftp.h"
 
 using namespace idc;
@@ -10,29 +10,12 @@ int main(int argc,char *argv[])
 {
     cftpclient ftp;
 
-    // 登录远程ftp服务器，请改为你自己服务器的ip地址。
-    if (ftp.login("192.168.150.128:21","wucz","oracle") == false)
+    // Log in to the remote FTP server, please change to your own server's IP address.
+    if (ftp.login("43.136.45.148:21","bftp","092121") == false)
     {
-        printf("ftp.login(192.168.150.128:21,wucz/oracle) failed.\n"); return -1;
+        printf("ftp.login(43.136.45.148:21,wucz/oracle) failed.\n"); return -1;
     }
 
-    // 把服务器上的/home/wucz/tmp/demo51.cpp下载到本地，存为/tmp/test/demo51.cpp。
-    // 如果本地的/tmp/test目录不存在，就创建它。
-    if (ftp.get("/home/wucz/tmp/demo51.cpp","/tmp/test/demo51.cpp")==false)
-    { 
-        printf("ftp.get() failed.\n"); return -1; 
-    }
-
-    printf("get /home/wucz/tmp/demo51.cpp ok.\n");  
-
-    /*
-    // 删除服务上的/home/wucz/tmp/demo51.cpp文件。
-    if (ftp.ftpdelete("/home/wucz/tmp/demo51.cpp")==false) { printf("ftp.ftpdelete() failed.\n"); return -1; }
-
-    printf("delete /home/wucz/tmp/demo51.cpp ok.\n");  
-
-    // 删除服务器上的/home/wucz/tmp目录，如果目录非空，删除将失败。
-    if (ftp.rmdir("/home/wucz/tmp")==false) { printf("ftp.rmdir() failed.\n"); return -1; }
-    */
-}
-
+    // Download the file /home/wucz/tmp/demo51.cpp from the server to the local machine, save it as /tmp/test/demo51.cpp.
+    // If the local directory /tmp/test does not exist, create it.
+    if (
