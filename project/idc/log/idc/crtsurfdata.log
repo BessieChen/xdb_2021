@@ -3,3 +3,8 @@
 2023-11-17 15:41:11 Successfully generated data file /tmp/idc/surfdata/SURF_ZH_20231117154100_21256.xml, data time 20231117154100, record count 839.
 2023-11-17 15:41:11 Successfully generated data file /tmp/idc/surfdata/SURF_ZH_20231117154100_21256.json, data time 20231117154100, record count 839.
 2023-11-17 15:41:11 crtsurfdata ends running.
+2023-11-21 09:17:26 crtsurfdata starts running.
+2023-11-21 09:17:26 Successfully generated data file /tmp/idc/surfdata/SURF_ZH_20231121091700_5876.csv, data time 20231121091700, record count 839.
+2023-11-21 09:17:26 Successfully generated data file /tmp/idc/surfdata/SURF_ZH_20231121091700_5876.xml, data time 20231121091700, record count 839.
+2023-11-21 09:17:26 Successfully generated data file /tmp/idc/surfdata/SURF_ZH_20231121091700_5876.json, data time 20231121091700, record count 839.
+2023-11-21 09:17:26 crtsurfdata ends running.

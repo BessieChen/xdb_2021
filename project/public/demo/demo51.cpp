@@ -1,6 +1,6 @@
 /*
  * Program name: demo51.cpp, this program demonstrates using the development framework's cftpclient class to upload files.
- * Author: Wu Congzhou
+ * Author: bc
  */
 #include "../_ftp.h"
 

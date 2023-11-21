@@ -780,3 +780,19 @@ ftp 139.159.187.232
 cd /home/xdb/project/public/demo
 #1700466124
 ll
+#1700446099
+ftp 139.159.187.232
+#1700443417
+su - 
+#1700529235
+cd /tmp/idc/surfdata
+#1700529411
+cd /home/xdb/project/idc/cpp
+#1700529428
+g++ -g -o crtsurfdata crtsurfdata.cpp -I/home/xdb/project_final/public /home/xdb/project_final/public/_public.cpp 
+#1700529446
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700529450
+cd /tmp/idc/surfdata
+#1700529452
+ll
