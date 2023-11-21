@@ -9,13 +9,15 @@ void EXIT(int sig);
 // 程序运行参数的结构体。
 struct st_arg
 {
-    char host[31];                 // 远程服务端的IP和端口。
-    int    mode;                     // 传输模式，1-被动模式，2-主动模式，缺省采用被动模式。
-    char username[31];        // 远程服务端ftp的用户名。
-    char password[31];         // 远程服务端ftp的密码。
-    char remotepath[256];    // 远程服务端存放文件的目录。
-    char localpath[256];        // 本地文件存放的目录。
-    char matchname[256];    // 待下载文件匹配的规则。
+    char host[31];                        // 远程服务端的IP和端口。
+    int    mode;                           // 传输模式，1-被动模式，2-主动模式，缺省采用被动模式。
+    char username[31];               // 远程服务端ftp的用户名。
+    char password[31];                // 远程服务端ftp的密码。
+    char remotepath[256];          // 远程服务端存放文件的目录。
+    char localpath[256];              // 本地文件存放的目录。
+    char matchname[256];          // 待下载文件匹配的规则。
+    int   ptype;                            // 下载后服务端文件的处理方式：1-什么也不做；2-删除；3-备份。
+    char remotepathbak[256];   // 下载后服务端文件的备份目录。
 } starg;
 
 bool _xmltoarg(const char *strxmlbuffer);  // 把xml解析到参数starg结构中。
@@ -60,7 +62,7 @@ int main(int argc,char *argv[])
     // 登录ftp服务器。
     if (ftp.login(starg.host,starg.username,starg.password,starg.mode)==false)
     {
-        logfile.write("ftp.login(%s,%s,%s) failed.\n",starg.host,starg.username,starg.password); return -1;
+        logfile.write("ftp.login(%s,%s,%s) failed.\n%s\n",starg.host,starg.username,starg.password,ftp.response()); return -1;
     }
 
     logfile.write("ftp.login ok.\n");
@@ -68,13 +70,13 @@ int main(int argc,char *argv[])
     // 进入ftp服务器存放文件的目录。
     if (ftp.chdir(starg.remotepath)==false)
     {
-        logfile.write("ftp.chdir(%s) failed.\n",starg.remotepath); return -1;
+        logfile.write("ftp.chdir(%s) failed.\n%s\n",starg.remotepath,ftp.response()); return -1;
     }
 
     // 调用ftpclient.nlist()方法列出服务器目录中的文件名，保存在本地文件中。
     if (ftp.nlist(".",sformat("/tmp/nlist/ftpgetfiles_%d.nlist",getpid())) == false)
     {
-        logfile.write("ftp.nlist(%s) failed.\n",starg.remotepath); return -1;
+        logfile.write("ftp.nlist(%s) failed.\n%s\n",starg.remotepath,ftp.response()); return -1;
     }
     logfile.write("nlist(%s) ok.\n",sformat("/tmp/nlist/ftpgetfiles_%d.nlist",getpid()).c_str());
 
@@ -96,10 +98,32 @@ int main(int argc,char *argv[])
         // 调用ftpclient.get()方法下载文件。
         if (ftp.get(strremotefilename,strlocalfilename)==false) 
         {
-            logfile << "failed.\n"; return -1;
+            logfile << "failed.\n" << ftp.response() << "\n"; return -1;
         }
 
         logfile << "ok.\n"; 
+
+        // ptype==1，增量下载文件。
+        // if (starg.ptype==1) {}
+
+        // ptype==2，删除服务端的文件。
+        if (starg.ptype==2)
+        {
+            if (ftp.ftpdelete(strremotefilename)==false)
+            {
+                logfile.write("ftp.ftpdelete(%s) failed.\n%s\n",strremotefilename.c_str(),ftp.response()); return -1;
+            }
+        }
+
+        // ptype==3，把服务端的文件移动到备份目录。
+        if (starg.ptype==3)
+        {
+            string strremotefilenamebak=sformat("%s/%s",starg.remotepathbak,aa.filename.c_str());  // 生成全路径的备份文件名。
+            if (ftp.ftprename(strremotefilename,strremotefilenamebak)==false)
+            {
+                logfile.write("ftp.ftprename(%s,%s) failed.\n%s\n",strremotefilename.c_str(),strremotefilenamebak.c_str(),ftp.response()); return -1;
+            }
+        }
     }
 
     return 0;
@@ -114,7 +138,8 @@ void _help()        // 显示帮助文档。
               "\"<host>192.168.150.128:21</host><mode>1</mode>"\
               "<username>wucz</username><password>oracle</password>"\
               "<remotepath>/tmp/idc/surfdata</remotepath><localpath>/idcdata/surfdata</localpath>"\
-              "<matchname>SURF_ZH*.XML,SURF_ZH*.CSV</matchname>\"\n\n");
+              "<matchname>SURF_ZH*.XML,SURF_ZH*.CSV</matchname>"\
+              "<ptype>3</ptype><remotepathbak>/tmp/idc/surfdatabak</remotepathbak>\"\n\n");
 
     printf("本程序是通用的功能模块，用于把远程ftp服务端的文件下载到本地目录。\n");
     printf("logfilename是本程序运行的日志文件。\n");
@@ -126,7 +151,11 @@ void _help()        // 显示帮助文档。
     printf("<remotepath>/tmp/idc/surfdata</remotepath> 远程服务端存放文件的目录。\n");
     printf("<localpath>/idcdata/surfdata</localpath> 本地文件存放的目录。\n");
     printf("<matchname>SURF_ZH*.XML,SURF_ZH*.CSV</matchname> 待下载文件匹配的规则。"\
-              "不匹配的文件不会被下载，本字段尽可能设置精确，不建议用*匹配全部的文件。\n\n\n");
+              "不匹配的文件不会被下载，本字段尽可能设置精确，不建议用*匹配全部的文件。\n");
+    printf("<ptype>1</ptype> 文件下载成功后，远程服务端文件的处理方式："\
+              "1-什么也不做；2-删除；3-备份，如果为3，还要指定备份的目录。\n");
+    printf("<remotepathbak>/tmp/idc/surfdatabak</remotepathbak> 文件下载成功后，服务端文件的备份目录，"\
+              "此参数只有当ptype=3时才有效。\n\n\n");
 }
 
 // 把xml解析到参数starg结构中。
@@ -160,6 +189,18 @@ bool _xmltoarg(const char *strxmlbuffer)
     getxmlbuffer(strxmlbuffer,"matchname",starg.matchname,100);   // 待下载文件匹配的规则。
     if (strlen(starg.matchname)==0)
     { logfile.write("matchname is null.\n");  return false; }  
+
+    // 下载后服务端文件的处理方式：1-什么也不做；2-删除；3-备份。
+    getxmlbuffer(strxmlbuffer,"ptype",starg.ptype);   
+    if ( (starg.ptype!=1) && (starg.ptype!=2) && (starg.ptype!=3) )
+    { logfile.write("ptype is error.\n"); return false; }
+
+    // 下载后服务端文件的备份目录。
+    if (starg.ptype==3) 
+    {
+        getxmlbuffer(strxmlbuffer,"remotepathbak",starg.remotepathbak,255); 
+        if (strlen(starg.remotepathbak)==0) { logfile.write("remotepathbak is null.\n");  return false; }
+    }
 
     return true;
 }

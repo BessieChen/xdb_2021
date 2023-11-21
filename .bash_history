@@ -796,3 +796,75 @@ g++ -g -o crtsurfdata crtsurfdata.cpp -I/home/xdb/project_final/public /home/xdb
 cd /tmp/idc/surfdata
 #1700529452
 ll
+#1700532753
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700532787
+/home/xdb/project/idc/cpp/crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700532792
+ll
+#1700533134
+ll
+#1700533185
+cd ..
+#1700533191
+ll
+#1700533200
+pwd
+#1700533217
+chown -R bftp:xftp /tmp/idc
+#1700533703
+/home/xdb/project/idc/cpp/crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700533752
+cd /tmp/idc/surfdata
+#1700533753
+ll
+#1700533773
+cd ..
+#1700533774
+ll
+#1700533859
+cd ~
+#1700533862
+cd /home/xdb/project/idc/cpp
+#1700533863
+ll
+#1700533868
+su -
+#1700537218
+cd /home/xdb/project/idc/cpp
+#1700537301
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700537304
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700537315
+cd /tmp/idc/surfdata
+#1700537316
+ll
+#1700537411
+;;
+#1700537413
+ll
+#1700537492
+pwd
+#1700537605
+rm *
+#1700537647
+/home/xdb/project/idc/cpp/crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700537650
+/home/xdb/project/idc/cpp/crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700537707
+ll
+#1700537715
+mkdir /tmp/idc/surfdatabak
+#1700537718
+sudo mkdir /tmp/idc/surfdatabak
+#1700537732
+cd ..
+#1700537737
+mkdir surfdatabak
+#1700538224
+cd /tmp/idc/surfdata
+#1700538226
+ll
+#1700538236
+ll ../surfdatabak/
