@@ -904,3 +904,187 @@ vi 2.txt
 vi 3.txt
 #1700562181
 ll
+#1700623629
+cd /tmp/ftp/server
+#1700623629
+ll
+#1700623633
+rm *
+#1700623917
+ll
+#1700623987
+pwd
+#1700623987
+ll
+#1700624187
+ll
+#1700624228
+pwd
+#1700624229
+ll
+#1700627179
+cat /etc/redhat-release
+#1700801923
+cd /tmp/idc/surfdata
+#1700801924
+ll
+#1700801928
+rm *
+#1700801933
+cd ..
+#1700801934
+ll
+#1700801940
+cd surfdatabak/
+#1700801941
+ll
+#1700801942
+rm *
+#1700801971
+ll
+#1700802008
+clear
+#1700802009
+cd /home/xdb/project/idc/cpp
+#1700802022
+g++ -g -o crtsurfdata crtsurfdata.cpp -I/home/xdb/project_final/public /home/xdb/project_final/public/_public.cpp 
+#1700802029
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700802038
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700802039
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700802040
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700802050
+cd /tmp/idc/surfdata
+#1700802051
+ll
+#1700810705
+cd /home/xdb/project/tools/cpp
+#1700810711
+g++ -g -o fileserver fileserver.cpp -I/home/hw_bftp/project/public /home/hw_bftp/project/public/_public.cpp -lm -lc
+#1700810745
+g++ -g -o fileserver fileserver.cpp -I/home/xdb/project/public /home/xdb/project/public/_public.cpp -lm -lc
+#1700810753
+cp -f fileserver ../bin/.
+#1700810971
+cd /tmp
+#1700810972
+ll
+#1700811805
+cd idc
+#1700811805
+ll
+#1700811828
+rm -rf surfdatabak/
+#1700811841
+rm -rf surfdatabak
+#1700811844
+rm -rf surfdatabak/*
+#1700811846
+ll
+#1700811850
+rm surfdata
+#1700811854
+rm surfdatabak/
+#1700811869
+sudo rm -rf surfdatabak/
+#1700812008
+clear
+#1700812017
+cd /tmp/idc/surfdata/
+#1700812018
+ll
+#1700812060
+clear
+#1700812086
+cd /home/xdb/project/tools/cpp
+#1700812093
+./fileserver 5010 /home/xdb/project/idc/log/idc/fileserver.log
+#1700812862
+cd /tmp/idc/surfdata
+#1700812863
+ll
+#1700812865
+rm *
+#1700812921
+cd /home/xdb/project/idc/cpp
+#1700812940
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700812942
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700812943
+./crtsurfdata /home/xdb/project/idc/ini/stcode.ini /tmp/idc/surfdata /home/xdb/project/idc/log/idc/crtsurfdata.log csv,xml,json
+#1700812953
+cd /tmp/idc/surfdata/
+#1700812954
+ll
+#1700813082
+cd /home/xdb/project/tools/cpp/
+#1700813083
+ll
+#1700813092
+cd /home/xdb/project/tools/cpp
+#1700813100
+g++ -g -o tcpputfiles tcpputfiles.cpp -I/home/xdb/project/public /home/xdb/project/public/_public.cpp -lm -lc
+#1700813106
+cp -f tcpputfiles ../bin/.
+#1700813455
+clear
+#1700813455
+cd /home/xdb/project/tools/cpp
+#1700813479
+./tcpputfiles /home/xdb/project/idc/log/idc/tcpputfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/idc/surfdata</clientpath><ptype>1</ptype><srvpath>/tmp/tcp/server</srvpath><andchild>true</andchild><matchname>*.xml,*.txt,*.csv</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpputfiles_surfdata</pname>"
+#1700813587
+clear
+#1700813591
+cat /home/xdb/project/idc/log/idc/tcpputfiles.log
+#1700813643
+cat /tmp/idc/surfdata/
+#1700813653
+ll /tmp/idc/surfdata/*
+#1700816676
+clear
+#1700816677
+cd /tmp/idc/surfdata
+#1700816678
+ll
+#1700816737
+clear
+#1700816737
+cd /home/xdb/project/tools/cpp
+#1700816762
+g++ -g -o tcpputfiles tcpputfiles.cpp -I/home/xdb/project/public /home/xdb/project/public/_public.cpp -lm -lc
+#1700816770
+g++ -g -o tcpgettfiles tcpgettfiles.cpp -I/home/xdb/project/public /home/xdb/project/public/_public.cpp -lm -lc
+#1700816789
+g++ -g -o tcpgetfiles tcpgetfiles.cpp -I/home/xdb/project/public /home/xdb/project/public/_public.cpp -lm -lc
+#1700816796
+cp -f tcpputfiles ../bin/.
+#1700816802
+cp -f tcpgetfiles ../bin/.
+#1700816965
+cd cd /home/xdb/project/tools/cpp
+#1700816984
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpgetfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/idc/surfdata</clientpath><ptype>1</ptype><srvpath>/tmp/tcp/server</srvpath><andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817027
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpputfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/tcp/server</clientpath><ptype>1</ptype><srvpath></srvpath>/tmp/idc/surfdata<andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817139
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpgetfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/tcp/server</clientpath><ptype>1</ptype><srvpath>/tmp/idc/surfdata</srvpath><andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817332
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpgetfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/idc/surfdata</clientpath><ptype>1</ptype>/tmp/tcp/server<srvpath></srvpath><andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817356
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpgetfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/idc/surfdata</clientpath><ptype>1</ptype><srvpath>/tmp/tcp/server</srvpath><andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817796
+cd /tmp/idc/suf
+#1700817799
+cd /tmp/idc/surfdata/
+#1700817800
+ll
+#1700817844
+./tcpgetfiles /home/xdb/project/idc/log/idc/tcpgetfiles.log "<ip>139.159.187.232</ip><port>5010</port><clientpath>/tmp/idc/surfdata</clientpath><ptype>1</ptype><srvpath>/tmp/tcp/server</srvpath><andchild>true</andchild><matchname>*</matchname><timetvl>10</timetvl><timeout>50</timeout><pname>tcpgetfiles_surfdata</pname>"
+#1700817917
+cat /home/xdb/project/idc/log/idc/tcpgetfiles.log
+#1700817991
+ll /tmp/idc/surfdata/
