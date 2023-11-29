@@ -1,17 +1,17 @@
 /*
- *  程序名：deletetable.cpp，此程序演示开发框架操作Oracle数据库（删除表中的数据）。
- *  作者：吴从周。
-*/
-#include "_ooci.h"   // 开发框架操作Oracle的头文件。
+ * Program Name: deletetable.cpp, this program demonstrates the framework for operating Oracle databases (deleting data from a table).
+ * Author: bc.
+ */
+#include "_ooci.h"   // Header file for the development framework operating Oracle.
 using namespace idc;
 
 int main(int argc,char *argv[])
 {
-    connection conn; // 创建数据库连接类的对象。
+    connection conn; // Create an object of the database connection class.
 
-    // 登录数据库，返回值：0-成功，其它-失败。
-    // 失败代码在conn.m_cda.rc中，失败描述在conn.m_cda.message中。
-    if (conn.connecttodb("scott/tiger@snorcl11g_128","Simplified Chinese_China.AL32UTF8") != 0)
+    // Log in to the database, return value: 0-success, others-failure.
+    // The failure code is in conn.m_cda.rc, the failure description is in conn.m_cda.message.
+    if (conn.connecttodb("scott/tiger@snorcl11g_211","Simplified Chinese_China.AL32UTF8") != 0)
     {
         printf("connect database failed.\n%s\n",conn.message()); return -1;
     }
@@ -20,34 +20,34 @@ int main(int argc,char *argv[])
 
     sqlstatement stmt(&conn); 
 
-    // 静态SQL语句。
-    stmt.prepare("delete from girls where id=10");
-    // 执行SQL语句，一定要判断返回值，0-成功，其它-失败。
-    // 失败代码在stmt.m_cda.rc中，失败描述在stmt.m_cda.message中。
+    // Static SQL statement.
+    stmt.prepare("delete from girls where id=11");
+    // Execute the SQL statement, must check the return value: 0-success, others-failure.
+    // The failure code is in stmt.m_cda.rc, the failure description is in stmt.m_cda.message.
     if (stmt.execute() != 0)
     {
         printf("stmt.execute() failed.\n%s\n%s\n",stmt.sql(),stmt.message()); return -1;
     }
 
-    printf("成功删除了%ld条记录。\n",stmt.rpc()); // stmt.m_cda.rpc是本次执行SQL影响的记录数。
+    printf("Successfully deleted %ld records.\n",stmt.rpc()); // stmt.m_cda.rpc is the number of records affected by this SQL execution.
 
-    int minid=11,maxid=13;
+    int minid=22, maxid=23;
     
-    // 动态SQL语句。
-    stmt.prepare("delete from girls where id>=:1 and id<=:2");  // :1,:2,...,:n可以理解为输入参数。
-    stmt.bindin(1,minid);
-    stmt.bindin(2,maxid);
+    // Dynamic SQL statement.
+    stmt.prepare("delete from girls where id>=:1 and id<=:2");  // :1, :2, ..., :n can be understood as input parameters.
+    stmt.bindin(1, minid);
+    stmt.bindin(2, maxid);
 
-    // 执行SQL语句，一定要判断返回值，0-成功，其它-失败。
-    // 失败代码在stmt.m_cda.rc中，失败描述在stmt.m_cda.message中。
+    // Execute the SQL statement, must check the return value: 0-success, others-failure.
+    // The failure code is in stmt.m_cda.rc, the failure description is in stmt.m_cda.message.
     if (stmt.execute() != 0)
     {
         printf("stmt.execute() failed.\n%s\n%s\n",stmt.sql(),stmt.message()); return -1;
     }
 
-    printf("成功删除了%ld条记录。\n",stmt.rpc()); // stmt.m_cda.rpc是本次执行SQL影响的记录数。
+    printf("Successfully deleted %ld records.\n",stmt.rpc()); // stmt.m_cda.rpc is the number of records affected by this SQL execution.
 
-    conn.commit();       // 提交事务。
+    conn.commit();       // Commit the transaction.
 
     return 0;
 }
