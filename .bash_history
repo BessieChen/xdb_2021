@@ -1088,3 +1088,5 @@ ll
 cat /home/xdb/project/idc/log/idc/tcpgetfiles.log
 #1700817991
 ll /tmp/idc/surfdata/
+#1700811984
+su
