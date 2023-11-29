@@ -1,17 +1,17 @@
 /*
- *  程序名：selecttable.cpp，此程序演示开发框架操作Oracle数据库（查询表中的数据）。
- *  作者：吴从周。
-*/
-#include "_ooci.h"   // 开发框架操作Oracle的头文件。
+ * Program Name: selecttable.cpp, this program demonstrates the framework for operating Oracle databases (querying data in a table).
+ * Author: bc.
+ */
+#include "_ooci.h"   // Header file for the development framework operating Oracle.
 using namespace idc;
 
 int main(int argc,char *argv[])
 {
-    connection conn; // 创建数据库连接类的对象。
+    connection conn; // Create an object of the database connection class.
 
-    // 登录数据库，返回值：0-成功，其它-失败。
-    // 失败代码在conn.m_cda.rc中，失败描述在conn.m_cda.message中。
-    if (conn.connecttodb("scott/tiger@snorcl11g_128","Simplified Chinese_China.AL32UTF8") != 0)
+    // Log in to the database, return value: 0-success, others-failure.
+    // The failure code is in conn.m_cda.rc, the failure description is in conn.m_cda.message.
+    if (conn.connecttodb("scott/tiger@snorcl11g_211","Simplified Chinese_China.AL32UTF8") != 0)
     {
         printf("connect database failed.\n%s\n",conn.message()); return -1;
     }
@@ -20,50 +20,66 @@ int main(int argc,char *argv[])
 
     sqlstatement stmt(&conn); 
 
-    int minid=11,maxid=13;
+    int minid=10, maxid=24;
     struct st_girl
     {
-        long id;                 // 超女编号，用long数据类型对应Oracle无小数的number(10)。
-        char name[31];     // 超女姓名，用char[31]对应Oracle的varchar2(30)。
-        double weight;     // 超女体重，用double数据类型对应Oracle有小数的number(8,2)。
-        char btime[20];     // 报名时间，用char对应Oracle的date，格式：'yyyy-mm-dd hh24:mi:ssi'。
-        char memo[301];  // 备注，用char[301]对应Oracle的varchar2(300)。
+        long id;                 // Super girl ID, long data type corresponds to Oracle's number(10) without decimals.
+        char name[31];     // Super girl name, char[31] corresponds to Oracle's varchar2(30).
+        double weight;     // Super girl weight, double data type corresponds to Oracle's number(8,2) with decimals.
+        char btime[20];     // Registration time, char corresponds to Oracle's date, format: 'yyyy-mm-dd hh24:mi:ss'.
+        char memo[301];  // Note, char[301] corresponds to Oracle's varchar2(300).
     } stgirl;
 
-    // 准备查询表的SQL语句，prepare()方法不需要判断返回值。
+    // Prepare the SQL statement for querying the table, prepare() method does not need to check the return value.
+    // Static
+    /* 
     stmt.prepare("select id,name,weight,to_char(btime,'yyyy-mm-dd hh24:mi:ss'),memo from girls where id>=11 and id<=13");
-    // 为SQL语句绑定输入变量的地址，bindin()方法不需要判断返回值。
-    stmt.bindin(1,minid);
-    stmt.bindin(2,maxid);
-    // 把查询语句的结果集与变量的地址绑定，bindout()方法不需要判断返回值。
-    stmt.bindout(1,stgirl.id);
-    stmt.bindout(2,stgirl.name,30);
-    stmt.bindout(3,stgirl.weight);
-    stmt.bindout(4,stgirl.btime,19);
-    stmt.bindout(5,stgirl.memo,300);
+    if (stmt.execute() != 0)
+    {
+        printf("stmt.execute() failed.\n%s\n%s\n",stmt.sql(),stmt.message()); return -1;
+    }
+    while (true)
+    {
+        memset(&stgirl, 0, sizeof(stgirl));    
+        if (stmt.next() != 0) break;
+        printf("id=%ld, name=%s, weight=%.02f, btime=%s, memo=%s\n", stgirl.id, stgirl.name, stgirl.weight, stgirl.btime, stgirl.memo);
+    }
+    printf("This query affected %ld records in the girls table.\n", stmt.rpc());    
+    */
+    
+    stmt.prepare("select id, name, weight, to_char(btime,'yyyy-mm-dd hh24:mi:ss'), memo from girls where id>=:1 and id<=:2");
+    // Bind the address of input variables to the SQL statement, bindin() method does not need to check the return value.
+    stmt.bindin(1, minid);
+    stmt.bindin(2, maxid);
+    // Bind the result set of the query statement to the address of variables, bindout() method does not need to check the return value.
+    stmt.bindout(1, stgirl.id);
+    stmt.bindout(2, stgirl.name, 30);
+    stmt.bindout(3, stgirl.weight);
+    stmt.bindout(4, stgirl.btime, 19);
+    stmt.bindout(5, stgirl.memo, 300);
 
-    // 执行SQL语句，一定要判断返回值，0-成功，其它-失败。
-    // 失败代码在stmt.m_cda.rc中，失败描述在stmt.m_cda.message中。
+    // Execute the SQL statement, must check the return value: 0-success, others-failure.
+    // The failure code is in stmt.m_cda.rc, the failure description is in stmt.m_cda.message.
     if (stmt.execute() != 0)
     {
         printf("stmt.execute() failed.\n%s\n%s\n",stmt.sql(),stmt.message()); return -1;
     }
 
-    // 本程序执行的是查询语句，执行stmt.execute()后，将会在数据库的缓冲区中产生一个结果集。
+    // This program executes a query statement. After executing stmt.execute(), a result set will be generated in the database buffer.
     while (true)
     {
-        memset(&stgirl,0,sizeof(stgirl));    // 先把结构体变量初始化。
+        memset(&stgirl, 0, sizeof(stgirl));    // First initialize the structure variable.
 
-        // 从结果集中获取一条记录，一定要判断返回值，0-成功，1403-无记录，其它-失败。
-        // 在实际开发中，除了0和1403，其它的情况极少出现。
-        if (stmt.next() !=0) break;
+        // Fetch a record from the result set, must check the return value: 0-success, 1403-no record, others-failure.
+        // In practical development, besides 0 and 1403, other situations rarely occur.
+        if (stmt.next() != 0) break;
 
-        // 把获取到的记录的值打印出来。
-        printf("id=%ld,name=%s,weight=%.02f,btime=%s,memo=%s\n",stgirl.id,stgirl.name,stgirl.weight,stgirl.btime,stgirl.memo);
+        // Print the values of the fetched record.
+        printf("id=%ld, name=%s, weight=%.02f, btime=%s, memo=%s\n", stgirl.id, stgirl.name, stgirl.weight, stgirl.btime, stgirl.memo);
     }
 
-    // 请注意，stmt.m_cda.rpc变量非常重要，它保存了SQL被执行后影响的记录数。
-    printf("本次查询了girls表%ld条记录。\n",stmt.rpc());
+    // Please note, the stmt.m_cda.rpc variable is very important, it stores the number of records affected by the executed SQL.
+    printf("This query affected %ld records in the girls table.\n", stmt.rpc());
 
     return 0;
 }
