@@ -1,17 +1,17 @@
 /*
- *  程序名：clobtofile.cpp，此程序演示开发框架操作Oracle数据库（把数据库的CLOB字段提取到文件）。
- *  作者：吴从周。
-*/
-#include "_ooci.h"   // 开发框架操作Oracle的头文件。
+ * Program Name: clobtofile.cpp, this program demonstrates the framework for operating Oracle databases (extracting a CLOB field from the database to a file).
+ * Author: bc.
+ */
+#include "_ooci.h"   // Header file for the development framework operating Oracle.
 using namespace idc;
 
 int main(int argc,char *argv[])
 {
-    connection conn; // 创建数据库连接类的对象。
+    connection conn; // Create an object of the database connection class.
 
-    // 登录数据库，返回值：0-成功，其它-失败。
-    // 失败代码在conn.m_cda.rc中，失败描述在conn.m_cda.message中。
-    if (conn.connecttodb("scott/tiger@snorcl11g_128","Simplified Chinese_China.AL32UTF8") != 0)
+    // Log in to the database, return value: 0-success, others-failure.
+    // The failure code is in conn.m_cda.rc, the failure description is in conn.m_cda.message.
+    if (conn.connecttodb("scott/tiger@snorcl11g_211","Simplified Chinese_China.AL32UTF8") != 0)
     {
         printf("connect database failed.\n%s\n",conn.message()); return -1;
     }
@@ -19,25 +19,25 @@ int main(int argc,char *argv[])
     printf("connect database ok.\n");
 
     sqlstatement stmt(&conn); 
-    stmt.prepare("select memo1 from girls where id=1");
+    stmt.prepare("select MEMO_2 from girls where id=1");
     stmt.bindclob();
 
-    // 执行SQL语句，一定要判断返回值，0-成功，其它-失败。
+    // Execute the SQL statement, must check the return value: 0-success, others-failure.
     if (stmt.execute() != 0)
     {
          printf("stmt.execute() failed.\n%s\n%s\n",stmt.sql(),stmt.message()); return -1;
     }
 
-    // 获取一条记录，一定要判断返回值，0-成功，1403-无记录，其它-失败。
+    // Fetch a record, must check the return value: 0-success, 1403-no record, others-failure.
     if (stmt.next() != 0) return 0;
 
-    // 把CLOB字段中的内容写入磁盘文件，一定要判断返回值，0-成功，其它-失败。
-    if (stmt.lobtofile("/project/public/db/oracle/memo_out.txt") != 0)
+    // Write the contents of the CLOB field to a disk file, must check the return value: 0-success, others-failure.
+    if (stmt.lobtofile("/home/hw_bftp/project/public/db/oracle/memo_out_bessie.txt") != 0)
     {
         printf("stmt.lobtofile() failed.\n%s\n",stmt.message()); return -1;
     }
 
-     printf("已把数据库的CLOB字段提取到文件。\n");
+     printf("The CLOB field from the database has been extracted to a file.\n");
 
     return 0;
 }
