@@ -65,7 +65,7 @@ int main(int argc,char *argv[])
     stmt.bindin(5,stgirl.memo,300);          // The length of the string can be unspecified, the default is 2000, this usage is not rigorous and not recommended.
 
     // Assign values to variables and execute the SQL statement.
-    for (int ii=10; ii<15; ii++)
+    for (int ii=20; ii<25; ii++)
     {
         // Initialize variables.
         memset(&stgirl, 0, sizeof(struct st_girl));
