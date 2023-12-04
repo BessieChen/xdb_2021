@@ -17,3 +17,13 @@ Extension host agent listening on 44376
 [09:58:51] [127.0.0.1][1488e810][ManagementConnection] New connection established.
 [09:58:51] [127.0.0.1][c5db7d5f][ExtensionHostConnection] New connection established.
 [09:58:51] [127.0.0.1][c5db7d5f][ExtensionHostConnection] <11726> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[10:03:51] New EH opened, aborting shutdown
+[12:51:30] [127.0.0.1][c5db7d5f][ExtensionHostConnection] The client has reconnected.
+[12:51:31] [127.0.0.1][1488e810][ManagementConnection] The client has reconnected.
+[12:51:35] [127.0.0.1][1488e810][ManagementConnection] The client has reconnected.
+[12:52:11] [127.0.0.1][c5db7d5f][ExtensionHostConnection] The client has reconnected.
+[12:54:15] [127.0.0.1][c5db7d5f][ExtensionHostConnection] The client has reconnected.
+[12:54:15] [127.0.0.1][1488e810][ManagementConnection] The client has reconnected.
+[13:10:25] [127.0.0.1][1488e810][ManagementConnection] The client has reconnected.
+[13:10:43] [127.0.0.1][c5db7d5f][ExtensionHostConnection] The client has reconnected.
